@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://pip.localsolver.com"
+verify_ssl = true
+name = "piplocalsolver"
+
+[packages]
+localsolver = {version = "*", index = "piplocalsolver"}
+jupyterlab = "*"
+numpy = "*"
+matplotlib = "*"
+pandas = "*"
+plotly = "*"
+pulp = "*"
+scikit-learn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
